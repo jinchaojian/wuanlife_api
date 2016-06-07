@@ -26,6 +26,7 @@
 |id|	int	|用户ID|
 |nickName	|string|	发帖人|
 |createTime|	date|	发帖时间|
+|sticky|	int	|是否置顶|
 |editRight|	boolean	|	编辑权限(0为无权限，1有)|
 |deleteRight|	boolean	|	删除权限(0为无权限，1有)|
 |stickyRight|	boolean	|	置顶权限(0为无权限，1有)|
@@ -37,17 +38,21 @@
 http://apihost/?service=Post.GetPostBase&post_id=1&id=1
 
      JSON:
-     {
+{
     "ret": 200,
     "data": {
         "postID": "1",
         "groupID": "1",
+        "groupName": "鬼扯天地",
         "title": "title1",
-        "text": "1texttexttexttexttexttexttexttexttexttext",
+        "text": "text1454",
         "id": "1",
-        "nickname": "陶陶1",
-        "createTime": "2016-04-06 00:00:00",
-        "editRight": 1
-     },
+        "nickname": "caoyu",
+        "createTime": "2016",
+        "sticky": "0",
+        "editRight": 1,
+        "deleteRight": 1,
+        "stickyRight": 0
+    },
     "msg": ""
-     }
+}
