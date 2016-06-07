@@ -23,9 +23,9 @@
 |groups.id          |      int  |       星球id|
 |groups.g_image   |        string    |  星球图片|
 |groups.g_introduction  |  string   |   星球介绍|
-|group.num          |      int      |   星球数量|
 |pageCount        |        int   |      总页数|
 |currentPage    |          int   |      当前页|
+|num          |      int      |   星球数量|
 
 ##示例
 
@@ -34,27 +34,20 @@
 http://dev.wuanlife.com:800/?service=Group.GetJoined&user_id=1
 
     JSON
-    {
+{
     "ret": 200,
     "data": {
         "groups": [
             {
-                "name": "666999",
-                "id": "11",
-                "g_image": null,
-                "g_introduction": null,
-                "num": "2"
-            },
-            {
-                "name": "午安网",
-                "id": "2",
-                "g_image": null,
-                "g_introduction": null,
-                "num": "2"
+                "name": "鬼扯天地",
+                "id": "1",
+                "g_image": "agagag",
+                "g_introduction": "eteteryeyr"
             }
         ],
         "pageCount": 1,
-        "currentPage": 1
+        "currentPage": 1,
+        "num": 1
     },
     "msg": ""
-    }
+}
