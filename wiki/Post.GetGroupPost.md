@@ -22,6 +22,7 @@
 |posts.text	|string|	内容|
 |posts.createTime|	date|	发帖时间|
 |posts.nickname|string	|发帖人|
+|posts.sticky|int	|是否置顶|
 |posts.groupID|int	|星球ID|
 |posts.groupName	|string|	星球名称|
 |pageCount	|int	|总页数|
@@ -34,67 +35,35 @@
 http://apilost/?service=Post.GetGroupPost&group_id=1&pn=1
 
     JSON:
-    {
+{
     "ret": 200,
     "data": {
+        "groupID": "1",
+        "groupName": "鬼扯天地",
         "posts": [
             {
-                "postID": "40",
-                "title": "title40",
-                "text": "40texttexttexttexttexttexttexttexttexttext ",
-                "createTime": "2016-04-06 01:19:00",
-                "nickname": "陶陶20",
-                "groupID": "1",
-                "groupName": "鬼扯1"
+                "digest": "0",
+                "postID": "1",
+                "title": "title1",
+                "text": "text1454",
+                "createTime": "2016",
+                "id": "1",
+                "nickname": "caoyu",
+                "sticky": "0"
             },
             {
-                "postID": "39",
-                "title": "title39",
-                "text": "39texttexttexttexttexttexttexttexttexttext ",
-                "createTime": "2016-04-06 01:18:00",
-                "nickname": "陶陶19",
-                "groupID": "1",
-                "groupName": "鬼扯1"
-            },
-            {
-                "postID": "38",
-                "title": "title38",
-                "text": "38texttexttexttexttexttexttexttexttexttext ",
-                "createTime": "2016-04-06 01:17:00",
-                "nickname": "陶陶18",
-                "groupID": "1",
-                "groupName": "鬼扯1"
-            },
-            {
-                "postID": "37",
-                "title": "title37",
-                "text": "37texttexttexttexttexttexttexttexttexttext ",
-                "createTime": "2016-04-06 01:16:00",
-                "nickname": "陶陶17",
-                "groupID": "1",
-                "groupName": "鬼扯1"
-            },
-            {
-                "postID": "36",
-                "title": "title36",
-                "text": "36texttexttexttexttexttexttexttexttexttext ",
-                "createTime": "2016-04-06 01:15:00",
-                "nickname": "陶陶16",
-                "groupID": "1",
-                "groupName": "鬼扯1"
-            },
-            {
-                "postID": "35",
-                "title": "title35",
-                "text": "35texttexttexttexttexttexttexttexttexttext ",
-                "createTime": "2016-04-06 01:14:00",
-                "nickname": "陶陶15",
-                "groupID": "1",
-                "groupName": "鬼扯1"
+                "digest": "0",
+                "postID": "2",
+                "title": "title2",
+                "text": "text1454",
+                "createTime": "2019",
+                "id": "1",
+                "nickname": "caoyu",
+                "sticky": "0"
             }
         ],
-        "pageCount": 4,
+        "pageCount": 1,
         "currentPage": 1
     },
     "msg": ""
-    }
+}
