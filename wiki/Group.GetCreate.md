@@ -23,9 +23,9 @@
 |groups.id           |     int   |      星球id|
 |groups.g_image     |      string   |   星球图片|
 |groups.g_introduction |   string   |   星球介绍|
-|group.num         |       int     |    星球数量|
 |pageCount           |     int     |    总页数|
 |currentPage        |      int   |      当前页|
+|num         |       int     |    星球数量|
 
 ##示例
 
@@ -34,20 +34,26 @@
 http://dev.wuanlife.com:800/?service=Group.GetCreate&user_id=1
 
     JSON
-    {
+{
     "ret": 200,
     "data": {
         "groups": [
             {
-                "name": "测试测试789",
+                "name": "asfa",
                 "id": "4",
-                "g_image": "../upload/group/2016/05/30/195108file.jpg",
-                "g_introduction": "测试",
-                "num": "1"
+                "g_image": null,
+                "g_introduction": null
+            },
+            {
+                "name": "asfaffffffa",
+                "id": "5",
+                "g_image": null,
+                "g_introduction": "111111212"
             }
         ],
         "pageCount": 1,
-        "currentPage": 1
+        "currentPage": 1,
+        "num": 2
     },
     "msg": ""
-    }
+}
