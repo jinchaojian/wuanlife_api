@@ -14,7 +14,7 @@
 |:--|:--|:--|:--|:--|
 |user_id|整形|必须|-|用户id|
 |name|字符串|必须|最小：1 最大：80|星球名称|
-|g_image|字符串  | 可选 ||  星球图片base64编码|
+|g_image|字符串  | 必须 ||  url链接|
 |g_introduction|字符串|可选||星球简介|
 
 ##返回说明
@@ -26,7 +26,7 @@
 |info.user_base_id    |字符串 |创建者ID|
 |info.name            |字符串 |星球名称|
 |info.g_introduction   |字符串  | 星球简介|
-|info.g_image        |字符串|星球图片路径|
+|info.g_image        |字符串|url链接|
 |msg                  |字符串 |提示信息|
 |info.authorization   |字符串 |权限，01表示创建者，02表示管理员，03表示会员|
 
